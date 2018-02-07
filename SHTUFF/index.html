@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Animated CSS gradients</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+<nav class="site-navigation page-navigation">
+<ul class = "menu">
+<li><a href="#top">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#project">Projects</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div id="top">
+<br>
+<br>
+<br>
+<div id="top">
+<br>
+<br>
+<br>
+<br>
+<br>
+	<h1 style="padding-bottom: 2%;">Emily</h1>
+	<h1>Richmond</h1>
+<h3>Software Engineer</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+<div id="about">
+<div id = "space">
+<br> 
+<br> 
+<br> 
+</div>
+<h2>ABOUT ME</h2>
+<div id = "box">
+<br>
+<p>I am a sophomore at Miami University in Oxford, Ohio studying software engineering and bioinformatics graduating in May of 2018. </p>
+<br>
+</div>
+</div>
+<div id="resume">
+<div id = "space">
+<br> 
+<br> 
+<br> 
+</div>
+<h2>RESUME</h2>
+<br>
+<div  class="round-button"><div class="round-button-circle"><a onclick="showEduDiv()" class="round-button">EDUCATION</a></div></div>
+
+<div  class="round-button"><div class="round-button-circle"><a onclick="showSkiDiv()" class="round-button">SKILLS</a></div></div>
+
+<div  class="round-button"><div class="round-button-circle"><a onclick="showWorDiv()" class="round-button">WORK EXPERIENCE</a></div></div>
+
+<div  class="round-button"><div class="round-button-circle"><a onclick="showLeaDiv()" class="round-button">LEADERSHIP EXPERIENCE</a></div></div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="educationDiv" style="display:none;" class="answer_list" >
+<h2 style = "font-size: 2vw; text-align: center">Education</h2>
+<h4>Miami University | Oxford, Ohio</h4>
+<h5>College of Engineering and Computing</h5>
+<h5>Software Engineering • Bioinformatics Minor</h5>
+<h5>May 2018</h5>
+	<p>VIEW AND DOWNLOAD RESUME <a href="Richmond%20Resume.pdf"> HERE</a></p>
+</div>
+	
+<div id="skillsDiv" style="display:none;" class="answer_list" >
+<h2 style = "font-size: 2vw; text-align: center">Skills</h2>
+<h4>Programming Languages</h4>
+<h5>Java • Python • Perl • SQL • Javascript • HTML • CSS</h5>
+<h4>Experience With</h4>
+<h5>Git • MATLAB • Photoshop • InDesign • Windows • Mac • Linux</h5>
+<p>VIEW AND DOWNLOAD RESUME <a href="Richmond%20Resume.pdf"> HERE</a></p>
+</div>
+<div id="workExpDiv" style="display:none;" class="answer_list" >
+<h2  style = "font-size: 2vw; text-align: center">Work Experience</h2>
+<h4>Cleveland Clinc • Intern</h4>
+<h4>iD Tech Camps • Instructor</h4>
+<h4>Miami University Bookstore • Student Manager</h4>
+<h4>Miami University Bookstore • Technology Assistant</h4>	
+<br>
+<p>VIEW AND DOWNLOAD RESUME <a href="Richmond%20Resume.pdf"> HERE</a></p>
+</div>
+<div id="leadershipExpDiv" style="display:none;" class="answer_list" >
+<h2>Leadership Experience</h2></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="download">
+<p>VIEW AND DOWNLOAD RESUME <a href="Richmond%20Resume.pdf"> HERE</a></p>
+</div>
+<div id="contact">
+<div id = "space">
+<br> 
+<br> 
+<br> 
+</div>
+<h2>CONTACT</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.combinedScroll.js">
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+// Hook up the current state to the nav bar
+$('.page-navigation').onePageNav();
+});
+</script>
+<script>
+	function showEduDiv() {
+		document.getElementById('educationDiv').style.display = "block";
+		document.getElementById('skillsDiv').style.display = "none";
+		document.getElementById('workExpDiv').style.display = "none";
+		document.getElementById('leadershipExpDiv').style.display = "none";
+		document.getElementById('download').style.display = "none";
+	}
+</script>
+
+<script>
+	function showSkiDiv() {
+		document.getElementById('skillsDiv').style.display = "block";
+		document.getElementById('educationDiv').style.display = "none";
+		document.getElementById('workExpDiv').style.display = "none";
+		document.getElementById('leadershipExpDiv').style.display = "none";
+		document.getElementById('download').style.display = "none";
+	}
+</script>
+<script>
+	function showWorDiv() {
+		document.getElementById('workExpDiv').style.display = "block";
+		document.getElementById('educationDiv').style.display = "none";
+		document.getElementById('skillsDiv').style.display = "none";
+		document.getElementById('leadershipExpDiv').style.display = "none";
+		document.getElementById('download').style.display = "none";
+	}
+</script>
+<script>
+	function showLeaDiv() {
+		document.getElementById('leadershipExpDiv').style.display = "block";
+		document.getElementById('educationDiv').style.display = "none";
+		document.getElementById('skillsDiv').style.display = "none";
+		document.getElementById('workExpDiv').style.display = "none";
+		document.getElementById('download').style.display = "none";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="comparison.css">
+</head>
+<body style="background-color:white;">
+	<h1>Tarsius syrichta</h1>
+<h2>Gene Annotation</h2>
+<ul>
+  <li><a href="main.html">Home</a></li>
+  <li><a href="overview.html">Overview</a></li>
+  <li><a class="active">Comparison</a></li>
+</ul>
+	<h4>Enter a Gene ID, Gene Name, or Transcript ID to see if it is in our database for the gene annotations</h4>
+	<h4>of Release 75 and Release 86 for the Tarsius syrichta.</h4>
+	<p>Genes and Transcripts found in the database will display the Gene ID, Gene Name, Sequence Name, Chromosomal Start and End Positions, the Source, Feature, and the Transcript ID and Transcript Name.</p>
+	<table> 
+	<form action="cgi.db.1.pl" method="GET">
+    ENSEMBL GeneID:  <input type="text" name="GeneID" /><br />
+	ENSEMBL Gene Name:  <input type="text" name="GeneName" /><br />
+	ENSEMBL TranscriptID:  <input type="text" name="TranscriptID" /><br />
+    <input type="submit" name="submit" value="Submit" />
+    </form>
+		
+</table>
+	
+	
+</body>
+</html>
